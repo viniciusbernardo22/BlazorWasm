@@ -10,11 +10,37 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.0" PrivateAssets="all"/>
+        <PackageReference Include="RestSharp" Version="110.2.0"/>
     </ItemGroup>
 
 
     <ItemGroup>
-        <None Include="Pages\Categories.razor"/>
+        <None Remove="Enums\**"/>
+        <None Remove="Components\**"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Compile Remove="Enums\**"/>
+        <Compile Remove="Components\**"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <EmbeddedResource Remove="Enums\**"/>
+        <EmbeddedResource Remove="Components\**"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Content Remove="Enums\**"/>
+        <Content Remove="Components\**"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <_ContentIncludedByDefault Remove="Shared\CategoryListComponent.razor"/>
+        <_ContentIncludedByDefault Remove="Components\CategoriesTable.razor"/>
     </ItemGroup>
 
 </Project>

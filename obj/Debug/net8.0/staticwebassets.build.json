@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w9h5av7IahwyaW2Sjb2h9MjOzzg74Q2dXnIagY9QCCo=",
+  "Hash": "1kcsrEzd9slEFX81eT9unBb5hwLHhffBlodA0MVuQF4=",
   "Source": "WasmApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -775,6 +775,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\obj\\Debug\\net8.0\\webcil\\netstandard.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\RestSharp.wasm",
+      "SourceId": "WasmApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/RestSharp.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\obj\\Debug\\net8.0\\webcil\\RestSharp.wasm"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.AppContext.wasm",
@@ -6057,6 +6076,25 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Reflection.wasm"
+    },
+    {
+      "Identity": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\obj\\Debug\\net8.0\\compressed\\lnn3omgcfv.gz",
+      "SourceId": "WasmApp",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/RestSharp.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\RestSharp.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\bin\\Debug\\net8.0\\wwwroot\\_framework\\RestSharp.wasm"
     },
     {
       "Identity": "C:\\Users\\Usuario\\Desktop\\Courses\\WasmApp\\obj\\Debug\\net8.0\\compressed\\lywcvzs21g.gz",

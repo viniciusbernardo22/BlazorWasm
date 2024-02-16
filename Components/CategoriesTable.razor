@@ -1,0 +1,31 @@
+﻿@inherits ComponentBase
+
+
+<table class="table table-hover">
+    <thead >
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var category in categories)
+    {
+        <tr>
+            <th>@category.Id</th>
+            <th>@category.Title</th>
+            <th>@category.Description</th>
+        </tr>
+    }
+
+    </tbody>
+</table>
+
+
+@code {
+
+    [Parameter]
+    public List<Category>? categories { get; set; }
+
+}
