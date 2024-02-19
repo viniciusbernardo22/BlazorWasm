@@ -6,9 +6,11 @@ public interface ICategoryService
 {
     Task<List<Category>> GetAllCategoriesAsync();
 
-    Task<Category> CreateNewCategoryAsync(Category model);
+    Task<Category?> CreateNewCategoryAsync(Category model);
 
-    Task<Category> GetCategoryById(int id);
+    Task<Category?> GetCategoryById(int id);
 
-    Task<Category> EditCategory(Category model);
+    Task<Category?> EditCategory(Category model);
+
+    Task<Category?> DeleteCategory(int Id);
 }

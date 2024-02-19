@@ -30,7 +30,7 @@ else
                 <th>@category.Description</th>
                 <th>
                     <button class="btn btn-info" @onclick="() => GetById(category.Id)">Edit</button>
-                    <button class="btn btn-danger">Delete</button>
+                    <button class="btn btn-danger" @onclick="() => DeleteCategory(category.Id)">Delete</button>
                 </th>
             </tr>
         }
@@ -102,6 +102,8 @@ else
             _category = category;
     }
 
-
+    async void DeleteCategory(int Id)
+    {
+    }
 
 }
