@@ -14,7 +14,7 @@ public class CategoryService : ICategoryService
         return await client.GetAsync<List<Category>>(request);
     }
 
-    public async Task<Category> CreateNewCategoryAsync(Category model)
+    public async Task<Category?> CreateNewCategoryAsync(Category model)
     {
         var client = new RestClient();
         var request = new RestRequest($"{Configuration.ApiUrl}v1/categories").AddJsonBody(model);
@@ -24,10 +24,10 @@ public class CategoryService : ICategoryService
         return category;
     }
 
-    public async Task<Category?> GetCategoryById(int Id)
+    public async Task<Category?> GetCategoryById(int id)
     {
         var client = new RestClient();
-        var request = new RestRequest($"{Configuration.ApiUrl}v1/categories/{Id}");
+        var request = new RestRequest($"{Configuration.ApiUrl}v1/categories/{id}");
         var category = await client.GetAsync<Category?>(request);
 
         return category;
@@ -40,10 +40,10 @@ public class CategoryService : ICategoryService
         return await client.PutAsync<Category?>(request);
     }
 
-    public async Task<Category?> DeleteCategory(int Id)
+    public async Task<Category?> DeleteCategory(int id)
     {
         var client = new RestClient();
-        var request = new RestRequest($"{Configuration.ApiUrl}v1/categories/{Id}");
+        var request = new RestRequest($"{Configuration.ApiUrl}v1/categories/{id}");
 
         return await client.DeleteAsync<Category?>(request);
     }

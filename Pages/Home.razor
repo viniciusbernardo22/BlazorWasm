@@ -104,6 +104,9 @@ else
 
     async void DeleteCategory(int Id)
     {
+        await service.DeleteCategory(Id);
+
+        _categories?.RemoveAll(cat => cat.Id == Id);
     }
 
 }
